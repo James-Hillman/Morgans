@@ -1,0 +1,181 @@
+:root {
+    --light-brown: #b4b3ad;
+    --med-brown: #4d4726;
+    --dark-brown: #2e2209;
+    --lightest-navy: #233554;
+    --navy-shadow: rgba(2, 12, 27, 0.7);
+    --dark-slate: #495670;
+    --gold: #b9a56e;
+    --light-slate: #a8b2d1;
+    --lightest-slate: #ccd6f6;
+    --white: #e6f1ff;
+    --green: #64ffda;
+    --green-tint: rgba(100, 255, 218, 0.1);
+    --light-green: #bee491;
+    --black: black;
+    --blue: #57cbff;
+    --font-fat-face:'Abril Fatface', cursive;
+      system-ui, sans-serif;
+    --font-Arb: 'Arbutus', cursive;
+    --font-Barlow: 'Barlow', sans-serif;
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  html, body {
+    background: var(--light-brown);
+    scroll-behavior: smooth;
+  }
+
+  /*--------------------------HEADER------------------------*/
+ 
+.header {
+    background-image: url(./images/header.png);
+    height: 70vh;
+}
+
+.nav-menu {
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-top: 50px;
+    margin-left: 50px;
+  }
+
+  .nav-menu  a {
+    text-decoration: none;
+  }
+
+  .header ul li {
+    display: inline;
+    text-align: center;
+    
+  }
+  .header ul li a{
+    padding: 20px;
+    font-size: 25px;
+    list-style: none;
+    color: var(--dark-slate);
+    font-family: var(--font-Arb);
+  }
+
+  .header li a:hover {
+    color: var(--lightest-navy);
+  }
+
+  .header h1   {
+    color: var(--gold);
+    font-size: 96px;
+    font-family: var(--font-fat-face);
+    padding: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px var(--dark-brown), 0 0 1em var(--gold), 0 0 0.1em var(--dark-brown);
+    padding-top: 320px;
+  }
+
+  .header p {
+    font-family: var(--font-Barlow);
+    font-weight: 600;
+    font-size: 26px;
+    padding-top: 10px;
+    color: var(--white);
+    text-align: center;
+  }
+
+
+  /*--------------------------ABOUT------------------------*/
+
+
+  #about {
+    margin-top: 150px;
+    text-align: center;
+  }
+
+  #about .logo-top {
+    width: 220px;
+    margin-bottom: 10px;
+    color: var(--gold);
+    
+  }
+  #about h2 {
+    font-size: 36px;
+    font-family: var(--font-Barlow);
+    color: var(--lightest-navy);
+    opacity: 0.7;
+  }
+
+  #about p {
+    font-family: var(--font-Barlow);
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 30px;
+    color: var(--med-brown);
+    line-height: 1.5;
+    padding-bottom: 100px;
+  }
+  #about h1 {
+    font-family: var(--font-Barlow);
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 300px;
+    color: var(--med-brown);
+    line-height: 1.5;
+    
+  }
+
+  
+
+
+
+  #services {
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .services-title {
+    font-family: var(--font-Barlow);
+    font-weight: bold;
+    font-size: 14 px;
+    padding-top: 300px;
+    color: var(--med-brown);
+    line-height: 1.5;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  #services .logo-top {
+    width: 220px;
+    margin-bottom: 10px;
+    color: var(--gold);
+    
+  }
+  #services h2 {
+    font-size: 36px;
+    font-family: var(--font-Barlow);
+    color: var(--lightest-navy);
+    opacity: 0.7;
+  }
+
+  #services p {
+    font-family: var(--font-Barlow);
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 30px;
+    color: var(--lightest-navy);
+    opacity: 0.7;
+    line-height: 1.5;
+    padding-bottom: 100px;
+  }
+  #services h1 {
+    font-family: var(--font-Barlow);
+    font-weight: bold;
+    font-size: 28px;
+    padding-top: 300px;
+    color: var(--med-brown);
+    line-height: 1.5;
+    padding-bottom: 20px;
+  }
