@@ -142,19 +142,20 @@
 
 /*--------------------------ABOUT------------------------*/
 
-.about {
+#about {
   background: var(--white);
-  height: 30vh;
+  height: 600px;
+  align-items: center;
 }
 
-article h2 {
+#about h2 {
   font-family: var(--font-Barlow);
   text-align: center;
   color: var(--black);
-  padding: 50px 0px;
-  margin-top: 250px;
+
+ 
 }
-article p {
+#about p {
   font-family: var(--font-Barlow);
   text-align: center;
   color: var(--black);
@@ -174,19 +175,20 @@ article p {
 }
 
 
-.services {
+#services {
   background: var(--black);
-  height: 30vh;
+  height: 600px;
+  align-items: center;
 }
 
-.services h2 {
+#services h2 {
   font-family: var(--font-Barlow);
   text-align: center;
   color: var(--gold);
   padding: 50px 0px;
   margin-top: 250px;
 }
-.services p {
+#services p {
   font-family: var(--font-Barlow);
   text-align: center;
   color: var(--gold);
