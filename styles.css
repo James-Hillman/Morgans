@@ -472,13 +472,11 @@ color: var(--dark-brown);
 
 
 
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 .flex-direction{
 flex-direction:column;
 }
-.container {
-  
-}
+
 .col-1 {
 width: 100%;
 padding: 50px;
@@ -519,10 +517,8 @@ height: fit-content;
 .col-3 p {
   font-size: var(--font-x-sm);
   text-align: center;
+  color: red;
   }
-
-
-
 }
 
 
@@ -536,9 +532,9 @@ margin-top: 0;
 
 .services-text h2 {
 text-align: center;
-width: 300px;
+width: 200px;
 padding: 10px;
-font-size: var(--font-xl);
+font-size: var(--font-md);
 color: var(--white);
 border: 1px solid var(--gold);
 border-radius: 20px;
