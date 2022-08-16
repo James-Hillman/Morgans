@@ -317,6 +317,45 @@
 
 }
 
+
+
+/*----------------------------------MID SECTION / BANNER-------------*/
+
+
+.mid-banner img {
+height: 80vh;
+
+}
+
+.mid-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mid-section h1 {
+  color: var(--white);
+  font-size: var(--font-xl);
+}
+.mid-section p {
+  color: var(--gold);
+  font-size: var(--font-sm);
+}
+
+.side-text {
+  align-items: center;
+  text-align: center;
+  margin: 400px auto;
+  
+}
+
+
+@media (max-width: 768px) {
+  .mid-banner {
+    height: 40vh;
+  }
+}
+
+
 /*--------------------------SERVICES------------------------*/
 
 
