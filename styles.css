@@ -517,7 +517,6 @@ height: fit-content;
 .col-3 p {
   font-size: var(--font-x-sm);
   text-align: center;
-  color: red;
   }
 .services-text h2 {
   font-size: var(--font-sm);  
