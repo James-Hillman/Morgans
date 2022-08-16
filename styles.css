@@ -519,6 +519,9 @@ height: fit-content;
   text-align: center;
   color: red;
   }
+.services-text h2 {
+  font-size: var(--font-sm);  
+}
 }
 
 
