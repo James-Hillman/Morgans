@@ -44,6 +44,8 @@
     font-family: var(--font-Lato);
   }
 
+  
+
   /*--------------------------HEADER------------------------*/
  
 .banner {
@@ -89,7 +91,7 @@
 }
 
 .nav-bar ul li a:hover {
-  color: var(--gold);
+  color: var(--white);
 }
 
 
@@ -115,9 +117,10 @@
   transform: translateY(-50%);
   color: var(--gold);
   text-align: center;
-  font-family: var(--font-fat-face);
+  font-family: var(--font-Lato);
   font-size: var(--font-md);
   animation: slideDown 2s ease;
+  font-weight: 700;
 }
 
 .nav-bar img {
@@ -160,7 +163,7 @@
   }
 }
 
-/*--------------------------INFORMATION------------------------*/
+/*--------------------------ARTICLES------------------------*/
 
 .container{
   display:flex;
@@ -195,7 +198,7 @@
 }
 
 .col-1 p {
-  font-size: var(--font-x-sm);
+  font-size: var(--font-sm);
   padding: 50px;
   text-align: center;
   color: var(--gold);
@@ -359,27 +362,165 @@ height: 80vh;
 /*--------------------------SERVICES------------------------*/
 
 
-
-
-
-#services {
-  background: var(--black);
-  height: 600px;
-  align-items: center;
+.container{
+  display:flex;
+  flex-wrap:wrap;
+  
+}
+.flex-direction{
+  flex-direction:row;
 }
 
-#services h2 {
-  font-family: var(--font-Barlow);
+.col-1{
+  background-color: var(--white);
+  width:33.3%;
+  height:600px;
   text-align: center;
-  color: var(--gold);
-  padding: 50px 0px;
-  margin-top: 250px;
+  padding-top: 100px;
 }
-#services p {
-  font-family: var(--font-Barlow);
+
+.col-1 h2 {
+  font-size: var(--font-xl);
+  padding: 20px;
   text-align: center;
-  color: var(--gold);
-  padding: 10px;
-  line-height: 1.5;
-  font-weight: 500;
+  color: var(--dark-brown);
 }
+
+.col-1 h2::after{
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 50%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid var(--gold) /* This creates the border. Replace black with whatever color you want. */
+}
+
+.col-1 p {
+  font-size: var(--font-x-sm);
+  padding: 50px;
+  text-align: center;
+  color: var(--dark-brown);
+}
+
+
+.col-2{
+  background-color: var(--white);
+  width:33.3%;
+  height:600px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.col-2 h2 {
+  font-size: var(--font-xl);
+  padding: 20px;
+  text-align: center;
+  color: var(--dark-brown);
+}
+
+.col-2 h2::after{
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 50%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid var(--gold) /* This creates the border. Replace black with whatever color you want. */
+}
+
+.col-2 p {
+  font-size: var(--font-x-sm);
+  padding: 50px;
+  text-align: center;
+  color: var(--dark-brown);
+}
+
+
+.col-3{
+  background-color: var(--white);
+  width:33.3%;
+  height:600px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.col-3 h2 {
+  font-size: var(--font-xl);
+  padding: 20px;
+  text-align: center;
+  color: var(--dark-brown);
+}
+
+.col-3 h2::after{
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 50%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid var(--gold) /* This creates the border. Replace black with whatever color you want. */
+}
+
+.col-3 p {
+  font-size: var(--font-x-sm);
+  padding: 50px;
+  text-align: center;
+  color: var(--dark-brown);
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+  .flex-direction{
+  flex-direction:column;
+  }
+  .container {
+    
+  }
+  .col-1 {
+  width: 100%;
+  padding: 50px;
+  height: fit-content;
+  }
+  .col-1 h2 {
+    font-size: var(--font-md);
+    text-align: center;
+  }
+  .col-1 p {
+    font-size: var(--font-x-sm);
+    text-align: center;
+  }
+
+  .col-2 {
+    height: fit-content;
+    width: 100%;
+    padding: 50px;
+    }
+  .col-2 h2 {
+    font-size: var(--font-md);
+    text-align: center;
+    }
+  .col-2 p {
+    font-size: var(--font-x-sm);
+    text-align: center;
+    }
+
+  .col-3 {
+    height: fit-content;
+      width: 100%;
+      padding: 50px;
+      }
+  .col-3 h2 {
+    font-size: var(--font-md);
+      text-align: center;
+      }
+  .col-3 p {
+    font-size: var(--font-x-sm);
+    text-align: center;
+    }
+
+  
+
+}
+
