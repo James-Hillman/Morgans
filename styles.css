@@ -178,7 +178,14 @@
   padding-top: 150px;
 }
 
-
+.col-1 h2::after{
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 50%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid var(--gold)  /* This creates the border. Replace black with whatever color you want. */
+}
 
 .col-1 h2 {
   font-size: var(--font-xl);
@@ -192,7 +199,7 @@
   padding: 50px;
   text-align: center;
   color: var(--gold);
-  font-family: var();
+  
 }
 
 .col-2{
@@ -200,7 +207,7 @@
   width:33.3%;
   height:600px;
   text-align: center;
-  padding-top: 150px;
+  padding-top: 100px;
 }
 
 .col-2 h2 {
@@ -209,9 +216,18 @@
   text-align: center;
 }
 
+.col-2 h2::after{
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 50%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid var(--gold) /* This creates the border. Replace black with whatever color you want. */
+}
+
 .col-2 p {
   font-size: var(--font-x-sm);
-  padding: 20px;
+  padding: 50px;
   text-align: center;
 }
 
@@ -228,6 +244,15 @@
   text-align: center;
   color: var(--white);
   font-weight: 100;
+}
+
+.col-3 h2::after{
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+    display: block; /* This will put the pseudo element on its own line. */
+    margin: 0 auto; /* This will center the border. */
+    width: 50%; /* Change this to whatever width you want. */
+    padding-top: 20px; /* This creates some space between the element and the border. */
+    border-bottom: 1px solid var(--gold)  /* This creates the border. Replace black with whatever color you want. */
 }
 
 .col-3 p {
