@@ -173,7 +173,7 @@
 .flex-direction{
   flex-direction:row;
 }
-.col-1{
+.col-4{
   background-color:var(--dark-brown);
   width:33.3%;
   height:600px;
@@ -181,7 +181,7 @@
   padding-top: 150px;
 }
 
-.col-1 h2::after{
+.col-4 h2::after{
   content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
     margin: 0 auto; /* This will center the border. */
@@ -190,14 +190,14 @@
     border-bottom: 1px solid var(--gold)  /* This creates the border. Replace black with whatever color you want. */
 }
 
-.col-1 h2 {
+.col-4 h2 {
   font-size: var(--font-xl);
   padding: 20px;
   text-align: center;
   color: var(--white);
 }
 
-.col-1 p {
+.col-4 p {
   font-size: var(--font-sm);
   padding: 50px;
   text-align: center;
@@ -205,7 +205,7 @@
   
 }
 
-.col-2{
+.col-5{
   background-color: var(--white);
   width:33.3%;
   height:600px;
@@ -213,13 +213,13 @@
   padding-top: 100px;
 }
 
-.col-2 h2 {
+.col-5 h2 {
   font-size: var(--font-xl);
   padding: 20px;
   text-align: center;
 }
 
-.col-2 h2::after{
+.col-5 h2::after{
   content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
     margin: 0 auto; /* This will center the border. */
@@ -228,20 +228,20 @@
     border-bottom: 1px solid var(--gold) /* This creates the border. Replace black with whatever color you want. */
 }
 
-.col-2 p {
+.col-5 p {
   font-size: var(--font-x-sm);
   padding: 50px;
   text-align: center;
 }
 
-.col-3{
+.col-6 {
   background-color:var(--dark-brown);
   width:33.3%;
   height:600px;
   padding-top: 150px;
 }
 
-.col-3 h2 {
+.col-6 h2 {
   font-size: var(--font-lg);
   padding: 20px;
   text-align: center;
@@ -249,7 +249,7 @@
   font-weight: 100;
 }
 
-.col-3 h2::after{
+.col-6 h2::after{
   content: ""; /* This is necessary for the pseudo element to work. */ 
     display: block; /* This will put the pseudo element on its own line. */
     margin: 0 auto; /* This will center the border. */
@@ -258,7 +258,7 @@
     border-bottom: 1px solid var(--gold)  /* This creates the border. Replace black with whatever color you want. */
 }
 
-.col-3 p {
+.col-6 p {
   font-size: var(--font-x-sm);
   padding: 50px;
   text-align: center;
@@ -271,47 +271,45 @@
   .flex-direction{
   flex-direction:column;
   }
-  .container {
-    
-  }
-  .col-1 {
+
+  .col-4 {
   width: 100%;
   padding: 50px;
   height: fit-content;
   }
-  .col-1 h2 {
+  .col-4 h2 {
     font-size: var(--font-md);
     text-align: center;
   }
-  .col-1 p {
+  .col-4 p {
     font-size: var(--font-x-sm);
     text-align: center;
   }
 
-  .col-2 {
+  .col-5 {
     height: fit-content;
     width: 100%;
     padding: 50px;
     }
-  .col-2 h2 {
+  .col-5 h2 {
     font-size: var(--font-md);
     text-align: center;
     }
-  .col-2 p {
+  .col-5 p {
     font-size: var(--font-x-sm);
     text-align: center;
     }
 
-  .col-3 {
+  .col-6 {
     height: fit-content;
       width: 100%;
       padding: 50px;
       }
-  .col-3 h2 {
+  .col-6 h2 {
     font-size: var(--font-md);
       text-align: center;
       }
-  .col-3 p {
+  .col-6 p {
     font-size: var(--font-x-sm);
     text-align: center;
     }
