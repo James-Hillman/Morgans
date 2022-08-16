@@ -24,6 +24,7 @@
     --font-sm: 18px;
     --font-md: 22px;
     --font-lg: 30px;
+    --font-xl: 36px;
     --font-xxl:56px;
 
   }
@@ -47,7 +48,7 @@
  
 .banner {
   background-image: url(./images/header.png);
-  height: 100vh;
+  height: 90vh;
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -174,12 +175,13 @@
   width:33.3%;
   height:600px;
   align-content: center;
+  padding-top: 150px;
 }
 
 
 
 .col-1 h2 {
-  font-size: var(--font-lg);
+  font-size: var(--font-xl);
   padding: 20px;
   text-align: center;
   color: var(--white);
@@ -187,7 +189,7 @@
 
 .col-1 p {
   font-size: var(--font-x-sm);
-  padding: 20px;
+  padding: 50px;
   text-align: center;
   color: var(--gold);
   font-family: var();
@@ -202,7 +204,7 @@
 }
 
 .col-2 h2 {
-  font-size: var(--font-lg);
+  font-size: var(--font-xl);
   padding: 20px;
   text-align: center;
 }
@@ -217,6 +219,7 @@
   background-color:var(--dark-brown);
   width:33.3%;
   height:600px;
+  padding-top: 150px;
 }
 
 .col-3 h2 {
@@ -229,7 +232,7 @@
 
 .col-3 p {
   font-size: var(--font-x-sm);
-  padding: 20px;
+  padding: 50px;
   text-align: center;
   color: var(--gold);
 }
