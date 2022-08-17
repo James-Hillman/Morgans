@@ -514,5 +514,48 @@ font-weight: bold;
 }
 
 
-/*------------------CARASOUL------------------*/
 
+/*------------------LOWER BANNER------------------*/
+
+
+.lower-banner {
+  background-image: url(./images/shop.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+}
+
+
+/*------------------FOOTER------------------*/
+
+.footer {
+  width: 100%;
+  background: var(--dark-brown);
+  height: max-content;
+}
+
+.footer-detail {
+  text-align: center;
+  padding: 100px;
+}
+
+.footer-detail .copyright {
+  color: var(--gold);
+  font-size: 10px;
+}
+
+.footer-detail p {
+  color: var(--white);
+  font-size: var(--font-x-sm);
+  padding: 10px;
+}
+
+.socials {
+  color: var(--gold);
+  padding: 10px;
+}
+
+.socials i {
+  font-size: 25px;
+  padding: 10px;
+}
