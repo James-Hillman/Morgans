@@ -3,7 +3,7 @@
   --med-brown: #4d4726;
   --dark-brown: #383735;
   --lightest-navy: #233554;
-  --navy-shadow: rgba(2, 12, 27, 0.7);
+  --navy-shadow: rgba(1, 6, 15, 0.7);
   --dark-slate: #495670;
   --gold: #b9a56e;
   --light-slate: #a8b2d1;
@@ -34,7 +34,7 @@
   font-weight: 100;
 }
 html, body {
-  background: var(--black);
+  background: var(--navy-shadow);
   scroll-behavior: smooth;
   
 }
@@ -63,6 +63,10 @@ display: flex;
 justify-content: center;
 background: var(--dark-brown);
 animation: slideIn 2s ease;
+position: fixed;
+top: 0;
+width: 100%;
+z-index: 1000;
 }
 
 .logo {
@@ -558,4 +562,5 @@ font-weight: bold;
 .socials i {
   font-size: 25px;
   padding: 10px;
+  cursor: pointer;
 }
