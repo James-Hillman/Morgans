@@ -3,7 +3,7 @@
   --med-brown: #4d4726;
   --dark-brown: #383735;
   --lightest-navy: #233554;
-  --navy-shadow: rgba(1, 6, 15, 0.7);
+  --darkest-brown: rgba(12, 10, 1, 0.7);
   --dark-slate: #495670;
   --gold: #b9a56e;
   --light-slate: #a8b2d1;
@@ -34,7 +34,7 @@
   font-weight: 100;
 }
 html, body {
-  background: var(--navy-shadow);
+  background: var(--darkest-brown);
   scroll-behavior: smooth;
   
 }
@@ -51,6 +51,7 @@ background-image: url(./images/header.png);
 height: 90vh;
 background-size: cover;
 background-position: center;
+
 text-align: center;
 width: 100%;
 }
