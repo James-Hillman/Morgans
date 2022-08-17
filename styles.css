@@ -472,6 +472,7 @@ font-weight: bold;
 }
 
 
+
 @media (max-width: 768px) {
 
   .service-menu {
@@ -528,8 +529,44 @@ font-weight: bold;
   background-size: cover;
   background-position: center;
   height: 70vh;
+  
 }
 
+blockquote {
+  font-size: var(--font-md);  
+  font-family: var(--font-Barlow);
+  font-style: italic;
+  font-weight: bold;
+  padding: 30px;
+  line-height: 1.45;
+  position: relative;
+  color: var(--dark-brown);
+  text-align: right;
+  margin-bottom: 60px;
+  margin-top: 80px;
+  width: 400px;
+  margin: 0 auto;
+  float: right;
+  }
+ 
+  
+  blockquote cite {
+  color: var(--dark-slate);
+  font-size: var(--font-sm);
+  display: block;
+  margin-top: 20px;
+  }
+   
+  blockquote cite:before {
+  content: "\2014 \2009";
+  }
+
+  @media (max-width:900px){
+    blockquote{
+      font-size:15px;
+      width: 100%;
+    }
+  }
 
 /*------------------FOOTER------------------*/
 
