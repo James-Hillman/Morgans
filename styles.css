@@ -9,11 +9,7 @@
   --light-slate: #a8b2d1;
   --lightest-slate: #ccd6f6;
   --white: #e6f1ff;
-  --green: #64ffda;
-  --green-tint: rgba(100, 255, 218, 0.1);
-  --light-green: #bee491;
   --black: black;
-  --blue: #57cbff;
   --font-fat-face:'Abril Fatface', cursive;
   --font-Barlow: 'Barlow', sans-serif;
   --font-Noto: 'Noto Serif', serif;
@@ -96,8 +92,6 @@ color: var(--gold);
 .nav-bar ul li a:hover {
 color: var(--white);
 }
-
-
 
 .content h1 {
 width: 100%;
@@ -200,12 +194,18 @@ text-align: center;
 color: var(--white);
 }
 
-.col-4 p {
-font-size: var(--font-sm);
-padding: 50px;
-text-align: center;
-color: var(--gold);
+.col-4 .sub-header {
+  font-size: var(--font-sm);
+  padding: 10px;
+  text-align: center;
+  color: var(--gold);
+  }
 
+.col-4 .sub-text {
+font-size: var(--font-x-sm);
+padding: 10px;
+text-align: center;
+color: var(--white);
 }
 
 .col-5{
@@ -232,9 +232,10 @@ content: ""; /* This is necessary for the pseudo element to work. */
 }
 
 .col-5 p {
-font-size: var(--font-sm);
+font-size: var(--font-x-sm);
 padding: 50px;
 text-align: center;
+line-height: 2;
 }
 
 .col-6 {
@@ -262,10 +263,11 @@ content: ""; /* This is necessary for the pseudo element to work. */
 }
 
 .col-6 p {
-font-size: var(--font-sm);
+font-size: var(--font-x-sm);
 padding: 50px;
 text-align: center;
 color: var(--gold);
+line-height: 2;
 }
 
 /*-----------------ARTICLE MEDIA QUERIES--------------------*/
@@ -328,17 +330,19 @@ height: fit-content;
 
 .mid-banner img {
 width: 100%;
-height: 45vh;
+height: 48vh;
 }
 
 .mid-section {
 display: flex;
 flex-wrap: wrap;
+
 }
 
 .mid-section h1 {
 color: var(--white);
 font-size: var(--font-xl);
+
 }
 .mid-section p {
 color: var(--gold);
@@ -358,7 +362,7 @@ margin: 0 auto;
   display: none;
 }
 .mid-banner img {
-  height: auto;  
+  display: none;
 }
 }
 
@@ -368,38 +372,46 @@ margin: 0 auto;
 
 .container{
 display:flex;
+
 }
 
 .service-menu {
   display: flex;
-  gap: 150px;
+  gap: 100px;
   justify-content: center;
   height: fit-content;
   flex-wrap: wrap;
-  background: var(--white);
-  padding: 50px 50px;
+  background-image: url(./images/rustic.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 90px 50px;
+  height: 50vh;
 }
 
-.col-1{
-background: var(--white);
-text-align: center;
 
+
+.col-1{
+background: transparent;
+text-align: center;
+align-content: center;
+padding: 50px;
 }
 
 .col-1 h2 {
-font-size: var(--font-md);
-padding: 20px;
+font-size: var(--font-sm);
+padding: 30px;
 text-align: center;
-color: var(--gold);
+color: var(--white);
 }
 
 .col-1 h2::after{
 content: ""; /* This is necessary for the pseudo element to work. */ 
-display: block; /* This will put the pseudo element on its own line. */
-margin: 0 auto; /* This will center the border. */
-width: 50%; /* Change this to whatever width you want. */
-padding-top: 20px; /* This creates some space between the element and the border. */
-border-bottom: 1px solid var(--gold) /* This creates the border. Replace black with whatever color you want. */
+display: block; 
+margin: 0 auto; 
+width: 80%; /* Change this to whatever width you want. */
+padding-top: 20px; 
+border-bottom: 1px solid var(--gold) 
 }
 
 .col-1 p {
@@ -412,25 +424,25 @@ font-weight: bold;
 
 
 .col-2{
-  background: var(--white);
+background: transparent;
 text-align: center;
-
+padding: 50px;
 }
 
 .col-2 h2 {
-font-size: var(--font-md);
+font-size: var(--font-sm);
 padding: 20px;
 text-align: center;
-color: var(--gold);
+color: var(--white);
 }
 
 .col-2 h2::after{
-content: ""; /* This is necessary for the pseudo element to work. */ 
-  display: block; /* This will put the pseudo element on its own line. */
-  margin: 0 auto; /* This will center the border. */
-  width: 50%; /* Change this to whatever width you want. */
-  padding-top: 20px; /* This creates some space between the element and the border. */
-  border-bottom: 1px solid var(--gold) /* This creates the border. Replace black with whatever color you want. */
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+  display: block; 
+  margin: 0 auto; 
+  width: 80%; /* Change this to whatever width you want. */
+  padding-top: 20px; 
+  border-bottom: 1px solid var(--gold) 
 }
 
 .col-2 p {
@@ -443,24 +455,25 @@ font-weight: bold;
 
 
 .col-3{
-background: var(--white);
+background: transparent;
 text-align: center;
+padding: 50px;
 }
 
 .col-3 h2 {
-font-size: var(--font-md);
+font-size: var(--font-sm);
 padding: 20px;
 text-align: center;
-color: var(--gold);
+color: var(--white);
 }
 
 .col-3 h2::after{
-content: ""; /* This is necessary for the pseudo element to work. */ 
-  display: block; /* This will put the pseudo element on its own line. */
-  margin: 0 auto; /* This will center the border. */
-  width: 50%; /* Change this to whatever width you want. */
-  padding-top: 20px; /* This creates some space between the element and the border. */
-  border-bottom: 1px solid var(--gold) /* This creates the border. Replace black with whatever color you want. */
+  content: ""; /* This is necessary for the pseudo element to work. */ 
+  display: block; 
+  margin: 0 auto; 
+  width: 80%; /* Change this to whatever width you want. */
+  padding-top: 20px; 
+  border-bottom: 1px solid var(--gold) 
 }
 
 .col-3 p {
@@ -473,18 +486,20 @@ font-weight: bold;
 
 
 
+
+
 @media (max-width: 768px) {
 
   .service-menu {
   display: block;
-
+  height: 110vh;
   }
 
 
 .col-1 h2 {
   font-size: var(--font-sm);
   text-align: center;
-  color: var(--gold);
+  color: var(--white);
 }
 .col-1 p {
   font-size: var(--font-x-sm);
@@ -495,7 +510,7 @@ font-weight: bold;
 .col-2 h2 {
   font-size: var(--font-sm);
   text-align: center;
-  color: var(--gold);
+  color: var(--white);
   }
 .col-2 p {
   font-size: var(--font-x-sm);
@@ -508,7 +523,7 @@ font-weight: bold;
 .col-3 h2 {
   font-size: var(--font-sm);
     text-align: center;
-    color: var(--gold);
+    color: var(--white);
     }
 .col-3 p {
   font-size: var(--font-x-sm);
@@ -519,7 +534,20 @@ font-weight: bold;
 }
 }
 
+#price-button {
+  height: 100px;
+  background: var(--white);
+  text-align: center;
+  padding-top: 30px;
+}
 
+button {
+  padding: 10px 20px;
+  background: transparent;
+  border:1px solid var(--gold);
+  border-radius: 10px;
+  cursor: pointer;
+}
 
 /*------------------LOWER BANNER------------------*/
 
@@ -529,44 +557,9 @@ font-weight: bold;
   background-size: cover;
   background-position: center;
   height: 70vh;
-  
 }
 
-blockquote {
-  font-size: var(--font-md);  
-  font-family: var(--font-Barlow);
-  font-style: italic;
-  font-weight: bold;
-  padding: 30px;
-  line-height: 1.45;
-  position: relative;
-  color: var(--dark-brown);
-  text-align: right;
-  margin-bottom: 60px;
-  margin-top: 80px;
-  width: 400px;
-  margin: 0 auto;
-  float: right;
-  }
- 
-  
-  blockquote cite {
-  color: var(--dark-slate);
-  font-size: var(--font-sm);
-  display: block;
-  margin-top: 20px;
-  }
-   
-  blockquote cite:before {
-  content: "\2014 \2009";
-  }
 
-  @media (max-width:900px){
-    blockquote{
-      font-size:15px;
-      width: 100%;
-    }
-  }
 
 /*------------------FOOTER------------------*/
 
@@ -574,6 +567,7 @@ blockquote {
   width: 100%;
   background: var(--dark-brown);
   height: max-content;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
 }
 
 .footer-detail {
