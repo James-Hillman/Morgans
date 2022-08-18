@@ -50,13 +50,13 @@ background-position: center;
 position: relative;
 text-align: center;
 width: 100%;
+align-content: center;
 }
 
 .nav-bar {
-width: 85%;
-width: auto;
-padding: 25px 0;
+width: 100%;
 display: flex;
+padding: 30px;
 justify-content: center;
 background: var(--dark-brown);
 animation: slideIn 2s ease;
@@ -75,9 +75,8 @@ cursor: pointer;
 .nav-bar ul li {
 list-style: none;
 display: inline-block;
-margin: 0 20px;
+align-items: center;
 font-size: var(--font-x-sm);
-
 }
 
 .nav-bar ul li a {
@@ -129,11 +128,6 @@ width: 200px;
 .nav-bar ul li a {
   flex-direction: column;
   font-size: var(--font-x-sm);
-  
-}
-
-.nav-bar ul li {
-  padding-top: 15px;
 }
 
 .content h1 {
