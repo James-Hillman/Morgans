@@ -344,7 +344,7 @@ p {
   content: ""; /* This is necessary for the pseudo element to work. */
   display: block;
   margin: 0 auto;
-  width: 80%; /* Change this to whatever width you want. */
+  width: 20%; /* Change this to whatever width you want. */
   padding-top: 20px;
   border-bottom: 1px solid var(--gold);
 }
@@ -373,7 +373,7 @@ p {
   content: ""; /* This is necessary for the pseudo element to work. */
   display: block;
   margin: 0 auto;
-  width: 80%; /* Change this to whatever width you want. */
+  width: 20%; /* Change this to whatever width you want. */
   padding-top: 20px;
   border-bottom: 1px solid var(--gold);
 }
@@ -402,7 +402,7 @@ p {
   content: ""; /* This is necessary for the pseudo element to work. */
   display: block;
   margin: 0 auto;
-  width: 80%; /* Change this to whatever width you want. */
+  width: 20%; /* Change this to whatever width you want. */
   padding-top: 20px;
   border-bottom: 1px solid var(--gold);
 }
@@ -475,19 +475,7 @@ p {
   }
 }
 
-#price-button {
-  position: absolute;
-  bottom: 80px;
-}
 
-button {
-  padding: 10px 20px;
-  background: transparent;
-  border: 1px solid var(--gold);
-  border-radius: 10px;
-  cursor: pointer;
-  color: var(--white);
-}
 
 /*------------------LOWER BANNER------------------*/
 
@@ -517,10 +505,13 @@ button {
   color: var(--med-brown);
   position: absolute;
   top: 110px;
+}
+
+.price-list h1::after {
   content: ""; /* This is necessary for the pseudo element to work. */
   display: block;
   margin: 0 auto;
-  width: 10%; /* Change this to whatever width you want. */
+  width: 50%; /* Change this to whatever width you want. */
   padding-top: 20px;
   border-bottom: 1px solid var(--gold);
 }
@@ -530,7 +521,7 @@ button {
   width:150px ;
   text-align: center;
   padding: 5px;
-  color: var(--dark-brown);
+  color: var(--dark-slate);
   font-size: var(--font-sm);
 }
 .col-7 h2::after {
@@ -538,28 +529,9 @@ button {
   display: block;
   margin: 0 auto;
   width: 50%; /* Change this to whatever width you want. */
-  padding-top: 20px;
+  padding-top: 5px;
   border-bottom: 1px solid var(--gold);
 }
-
-.col-8 h2 {
-  padding: 5px;
-  width:150px ;
-  text-align: center;
-  font-size: var(--font-sm);
-  color: var(--dark-brown);
-}
-.col-8 h2::after {
-  content: ""; /* This is necessary for the pseudo element to work. */
-  display: block;
-  margin: 0 auto;
-  width: 50%; /* Change this to whatever width you want. */
-  padding-top: 20px;
-  border-bottom: 1px solid var(--gold);
-}
-
-
-
 
 .col-7 p {
   width:150px ;
@@ -569,6 +541,25 @@ button {
   font-weight: bold;
   font-size: var(--font-x-sm);
 }
+
+.col-8 h2 {
+  padding: 5px;
+  width:150px ;
+  text-align: center;
+  font-size: var(--font-sm);
+  color: var(--dark-slate);
+}
+.col-8 h2::after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block;
+  margin: 0 auto;
+  width: 50%; /* Change this to whatever width you want. */
+  padding-top: 5px;
+  border-bottom: 1px solid var(--gold);
+}
+
+
+
 
 .col-8 p {
   width:150px ;
@@ -583,7 +574,7 @@ button {
   width:150px ;
   text-align: center;
   padding: 5px;
-  color: var(--dark-brown);
+  color: var(--dark-slate);
   font-size: var(--font-sm);
 }
 .col-9 h2::after {
@@ -591,7 +582,7 @@ button {
   display: block;
   margin: 0 auto;
   width: 50%; /* Change this to whatever width you want. */
-  padding-top: 20px;
+  padding-top: 5px;
   border-bottom: 1px solid var(--gold);
 }
 
@@ -604,10 +595,6 @@ button {
   font-weight: bold;
   font-size: var(--font-x-sm);
 }
-
-
-
-
 
 
 
