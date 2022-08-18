@@ -47,7 +47,7 @@ background-image: url(./images/header.png);
 height: 90vh;
 background-size: cover;
 background-position: center;
-
+position: relative;
 text-align: center;
 width: 100%;
 }
@@ -96,8 +96,7 @@ color: var(--white);
 .content h1 {
 width: 100%;
 position: absolute;
-top: 35%;
-transform: translateY(-50%);
+top: 50%;
 color: var(--white);
 text-align: center;
 font-family: var(--font-fat-face);
@@ -110,14 +109,14 @@ padding-bottom: 5px;
 .content p {
 width: 100%;
 position: absolute;
-top: 42%;
-transform: translateY(-50%);
+top: 60%;
 color: var(--gold);
 text-align: center;
 font-family: var(--font-Lato);
 font-size: var(--font-md);
 animation: slideDown 2s ease;
 font-weight: 700;
+padding: 20px;
 }
 
 .nav-bar img {
@@ -325,46 +324,7 @@ height: fit-content;
 
 
 
-/*----------------------------------MID SECTION / BANNER-------------*/
 
-
-.mid-banner img {
-width: 100%;
-height: 48vh;
-}
-
-.mid-section {
-display: flex;
-flex-wrap: wrap;
-
-}
-
-.mid-section h1 {
-color: var(--white);
-font-size: var(--font-xl);
-
-}
-.mid-section p {
-color: var(--gold);
-font-size: var(--font-sm);
-}
-
-.side-text {
-display: grid;
-place-content: center;
-margin: 0 auto;
-
-}
-
-
-@media (max-width: 1280px) {
-.side-text {
-  display: none;
-}
-.mid-banner img {
-  display: none;
-}
-}
 
 
 /*--------------------------SERVICES------------------------*/
@@ -372,21 +332,21 @@ margin: 0 auto;
 
 .container{
 display:flex;
-
 }
 
 .service-menu {
   display: flex;
-  gap: 100px;
+  gap: 50px;
   justify-content: center;
-  height: fit-content;
   flex-wrap: wrap;
   background-image: url(./images/rustic.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  padding: 90px 50px;
-  height: 50vh;
+  height: 70vh;
+  padding-top: 50px;
+  align-items: center;
+  position: relative;
 }
 
 
@@ -394,7 +354,6 @@ display:flex;
 .col-1{
 background: transparent;
 text-align: center;
-align-content: center;
 padding: 50px;
 }
 
@@ -418,7 +377,6 @@ border-bottom: 1px solid var(--gold)
 font-size: var(--font-x-sm);
 text-align: center;
 color: var(--dark-brown);
-padding: 20px;
 font-weight: bold;
 }
 
@@ -449,7 +407,6 @@ color: var(--white);
 font-size: var(--font-x-sm);
 text-align: center;
 color: var(--dark-brown);
-padding: 20px;
 font-weight: bold;
 }
 
@@ -480,7 +437,6 @@ color: var(--white);
 font-size: var(--font-x-sm);
 text-align: center;
 color: var(--dark-brown);
-padding: 20px;
 font-weight: bold;
 }
 
@@ -493,6 +449,7 @@ font-weight: bold;
   .service-menu {
   display: block;
   height: 110vh;
+  position: relative;
   }
 
 
@@ -532,13 +489,19 @@ font-weight: bold;
 .services-text h2 {
   font-size: var(--font-sm);  
 }
+#price-button {
+  align-items: center;
+}
+
 }
 
 #price-button {
   height: 100px;
-  background: var(--white);
-  text-align: center;
   padding-top: 30px;
+  position: absolute;
+  bottom: 10px;
+  left: 47.5%;
+  display: block;
 }
 
 button {
@@ -547,6 +510,7 @@ button {
   border:1px solid var(--gold);
   border-radius: 10px;
   cursor: pointer;
+  color: var(--white);
 }
 
 /*------------------LOWER BANNER------------------*/
@@ -568,6 +532,7 @@ button {
   background: var(--dark-brown);
   height: max-content;
   clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  position: relative;
 }
 
 .footer-detail {
