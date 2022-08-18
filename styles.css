@@ -477,7 +477,7 @@ p {
 
 #price-button {
   position: absolute;
-  bottom: 10px;
+  bottom: 80px;
 }
 
 button {
@@ -497,6 +497,118 @@ button {
   background-position: center;
   height: 70vh;
 }
+
+
+/*------------------PRICE LIST------------------*/
+
+.price-list {
+  width: 100%;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  background: var(--white);
+  padding: 250px 50px;
+  position: relative;
+}
+
+.price-list h1 {
+  text-align: center;
+  color: var(--med-brown);
+  position: absolute;
+  top: 110px;
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block;
+  margin: 0 auto;
+  width: 10%; /* Change this to whatever width you want. */
+  padding-top: 20px;
+  border-bottom: 1px solid var(--gold);
+}
+
+
+.col-7 h2 {
+  width:150px ;
+  text-align: center;
+  padding: 5px;
+  color: var(--dark-brown);
+  font-size: var(--font-sm);
+}
+.col-7 h2::after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block;
+  margin: 0 auto;
+  width: 50%; /* Change this to whatever width you want. */
+  padding-top: 20px;
+  border-bottom: 1px solid var(--gold);
+}
+
+.col-8 h2 {
+  padding: 5px;
+  width:150px ;
+  text-align: center;
+  font-size: var(--font-sm);
+  color: var(--dark-brown);
+}
+.col-8 h2::after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block;
+  margin: 0 auto;
+  width: 50%; /* Change this to whatever width you want. */
+  padding-top: 20px;
+  border-bottom: 1px solid var(--gold);
+}
+
+
+
+
+.col-7 p {
+  width:150px ;
+  text-align: center;
+  padding: 20px;
+  color: var(--gold);
+  font-weight: bold;
+  font-size: var(--font-x-sm);
+}
+
+.col-8 p {
+  width:150px ;
+  text-align: center;
+  padding: 20px;
+  color: var(--gold);
+  font-weight: bold;
+  font-size: var(--font-x-sm);
+}
+
+.col-9 h2 {
+  width:150px ;
+  text-align: center;
+  padding: 5px;
+  color: var(--dark-brown);
+  font-size: var(--font-sm);
+}
+.col-9 h2::after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block;
+  margin: 0 auto;
+  width: 50%; /* Change this to whatever width you want. */
+  padding-top: 20px;
+  border-bottom: 1px solid var(--gold);
+}
+
+
+.col-9 p {
+  width:150px ;
+  text-align: center;
+  padding: 20px;
+  color: var(--gold);
+  font-weight: bold;
+  font-size: var(--font-x-sm);
+}
+
+
+
+
+
+
 
 /*------------------FOOTER------------------*/
 
