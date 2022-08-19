@@ -550,11 +550,26 @@ p {
   justify-content: center;
 }
 
+@media (max-width: 768px) {
+  .opening-info {
+    padding: 10px;
+    text-align: center;
+  }
+  .opening-info h1 {
+    text-align: center;
+    padding: 0;
+  }
+  .price-list h1 {
+    color: var(--dark-brown);
+    font-size: var(--font-x-sm);
+  }
+}
+
 .opening-info h1 {
   text-align: center;
+  padding: 10px;
 }
 .opening-info h1::after {
-  padding-right: 30px;
   content: ""; /* This is necessary for the pseudo element to work. */
   display: block; /* This will put the pseudo element on its own line. */
   margin: 0 auto; /* This will center the border. */
@@ -570,13 +585,124 @@ p {
   margin-left: 30px;
 }
 
+/*------------------REVIEWS------------------*/
+
+.peoples-say {
+  height: max-content;
+  background: var(--dark-brown);
+}
+
+.peoples-say h1 {
+  color: var(--white);
+}
+
+.review-header {
+  text-align: center;
+  padding: 80px 30px 50px 30px;
+  color: var(--gold);
+}
+
+.reviews {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 100px;
+}
+
+.review-1 {
+  width: 400px;
+  height: 220px;
+  border: 1px solid var(--gold);
+  padding-left: 20px;
+  margin: 20px;
+}
+.review-1 h2 {
+  padding: 15px;
+  color: var(--gold);
+}
+.review-1 blockquote {
+  margin: 20px;
+  color: var(--white);
+  font-size: var(--font-xxs);
+  text-align: left;
+}
+
+.review-1 span {
+  margin-left: 20px;
+}
+
+.review-1 .checked {
+  color: var(--gold);
+  
+}
+
+.review-2 {
+  width: 400px;
+  height: 220px;
+  border: 1px solid var(--gold);
+  padding-left: 20px;
+  margin: 20px;
+}
+.review-2 h2 {
+  padding: 15px;
+  color: var(--gold);
+}
+.review-2 blockquote {
+  margin: 20px;
+  color: var(--white);
+  font-size: var(--font-xxs);
+  text-align: left;
+}
+
+.review-2 span {
+  margin-left: 20px;
+}
+
+.review-2 .checked {
+  color: var(--gold);
+  
+}
+
+.review-3 {
+  width: 400px;
+  height: 220px;
+  border: 1px solid var(--gold);
+  padding-left: 20px;
+  margin: 20px;
+}
+.review-3 h2 {
+  padding: 15px;
+  color: var(--gold);
+}
+.review-3 blockquote {
+  margin: 20px;
+  color: var(--white);
+  font-size: var(--font-xxs);
+  text-align: left;
+}
+
+.review-3 span {
+  margin-left: 20px;
+}
+
+.review-3 .checked {
+  color: var(--gold);
+  
+}
+
+
+
+
+
+
+
 /*------------------FOOTER------------------*/
 
 .footer {
   width: 100%;
   background: var(--dark-brown);
   height: max-content;
-  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
   position: relative;
 }
 
