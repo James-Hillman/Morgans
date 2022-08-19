@@ -471,11 +471,7 @@ p {
   .services-text h2 {
     font-size: var(--font-sm);
   }
-
-
 }
-
-
 
 /*------------------LOWER BANNER------------------*/
 
@@ -485,7 +481,6 @@ p {
   background-position: center;
   height: 70vh;
 }
-
 
 /*------------------PRICE LIST------------------*/
 
@@ -497,6 +492,15 @@ p {
   background: var(--white);
 }
 
+.price-list h1 {
+  color: var(--dark-brown);
+  font-size: var(--font-lg);
+}
+
+.price-list h2 {
+  color: var(--dark-brown);
+  font-size: var(--font-x-sm);
+}
 
 .price-list h1::after {
   padding-right: 30px;
@@ -516,12 +520,18 @@ p {
   justify-content: center;
 }
 
-.col-7, .col-8, .col-9, h2 {
+.col-7,
+.col-8,
+.col-9,
+h2 {
   font-size: var(--font-sm);
   color: var(--dark-brown);
 }
 
-.col-7, .col-8, .col-9, p {
+.col-7,
+.col-8,
+.col-9,
+p {
   font-size: var(--font-x-sm);
   color: var(--gold2);
   text-align: center;
@@ -556,7 +566,8 @@ p {
 .days {
   line-height: 2.5;
   font-size: var(--font-xxs);
-  color: var(--dark-brown)
+  color: var(--dark-brown);
+  margin-left: 30px;
 }
 
 /*------------------FOOTER------------------*/
