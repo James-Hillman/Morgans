@@ -6,6 +6,7 @@
   --darkest-brown: rgba(12, 10, 1, 0.7);
   --dark-slate: #495670;
   --gold: #b9a56e;
+  --gold2: #96875b;
   --light-slate: #a8b2d1;
   --lightest-slate: #ccd6f6;
   --white: #e6f1ff;
@@ -471,10 +472,7 @@ p {
     font-size: var(--font-sm);
   }
 
-  #price-button {
-    align-items: center;
-    padding-top: 50px;
-  }
+
 }
 
 
@@ -499,11 +497,23 @@ p {
   background: var(--white);
 }
 
+
+.price-list h1::after {
+  padding-right: 30px;
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 80%; /* Change this to whatever width you want. */
+  padding-top: 3px; /* This creates some space between the element and the border. */
+  border-bottom: 1px solid var(--gold); /* This creates the border. Replace black with whatever color you want. */
+}
+
 .price-info {
   display: flex;
   flex-wrap: wrap;
   gap: 60px;
   padding: 100px;
+  justify-content: center;
 }
 
 .col-7, .col-8, .col-9, h2 {
@@ -513,8 +523,9 @@ p {
 
 .col-7, .col-8, .col-9, p {
   font-size: var(--font-x-sm);
-  color: var(--gold);
+  color: var(--gold2);
   text-align: center;
+  padding: 15px;
 }
 
 .price-info p {
@@ -526,10 +537,20 @@ p {
   display: flex;
   flex-wrap: wrap;
   padding: 100px;
+  justify-content: center;
 }
 
 .opening-info h1 {
+  text-align: center;
+}
+.opening-info h1::after {
   padding-right: 30px;
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block; /* This will put the pseudo element on its own line. */
+  margin: 0 auto; /* This will center the border. */
+  width: 80%; /* Change this to whatever width you want. */
+  padding-top: 3px; /* This creates some space between the element and the border. */
+  border-bottom: 1px solid var(--gold); /* This creates the border. Replace black with whatever color you want. */
 }
 
 .days {
