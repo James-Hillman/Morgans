@@ -15,6 +15,7 @@
   --font-Noto: "Noto Serif", serif;
   --font-Lato: "Lato", sans-serif;
   --font-x-sm: 14px;
+  --font-xxs: 12px;
   --font-sm: 18px;
   --font-md: 22px;
   --font-lg: 30px;
@@ -35,6 +36,7 @@ body {
 }
 p {
   font-family: var(--font-Lato);
+  font-size: var(--font-xxs);
 }
 
 /*--------------------------HEADER / NAV / IMAGE TEXT------------------------*/
@@ -490,113 +492,51 @@ p {
 /*------------------PRICE LIST------------------*/
 
 .price-list {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
-  gap: 100px;
   justify-content: center;
+  padding: 20px;
   background: var(--white);
-  padding: 250px 50px;
-  position: relative;
 }
 
-.price-list h1 {
-  text-align: center;
-  color: var(--med-brown);
-  position: absolute;
-  top: 110px;
+.price-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding: 100px;
 }
 
-.price-list h1::after {
-  content: ""; /* This is necessary for the pseudo element to work. */
-  display: block;
-  margin: 0 auto;
-  width: 50%; /* Change this to whatever width you want. */
-  padding-top: 20px;
-  border-bottom: 1px solid var(--gold);
-}
-
-
-.col-7 h2 {
-  width:150px ;
-  text-align: center;
-  padding: 5px;
-  color: var(--dark-slate);
+.col-7, .col-8, .col-9, h2 {
   font-size: var(--font-sm);
-}
-.col-7 h2::after {
-  content: ""; /* This is necessary for the pseudo element to work. */
-  display: block;
-  margin: 0 auto;
-  width: 50%; /* Change this to whatever width you want. */
-  padding-top: 5px;
-  border-bottom: 1px solid var(--gold);
+  color: var(--dark-brown);
 }
 
-.col-7 p {
-  width:150px ;
-  text-align: center;
-  padding: 20px;
-  color: var(--gold);
-  font-weight: bold;
+.col-7, .col-8, .col-9, p {
   font-size: var(--font-x-sm);
-}
-
-.col-8 h2 {
-  padding: 5px;
-  width:150px ;
-  text-align: center;
-  font-size: var(--font-sm);
-  color: var(--dark-slate);
-}
-.col-8 h2::after {
-  content: ""; /* This is necessary for the pseudo element to work. */
-  display: block;
-  margin: 0 auto;
-  width: 50%; /* Change this to whatever width you want. */
-  padding-top: 5px;
-  border-bottom: 1px solid var(--gold);
-}
-
-
-
-
-.col-8 p {
-  width:150px ;
-  text-align: center;
-  padding: 20px;
   color: var(--gold);
-  font-weight: bold;
-  font-size: var(--font-x-sm);
-}
-
-.col-9 h2 {
-  width:150px ;
   text-align: center;
-  padding: 5px;
-  color: var(--dark-slate);
-  font-size: var(--font-sm);
-}
-.col-9 h2::after {
-  content: ""; /* This is necessary for the pseudo element to work. */
-  display: block;
-  margin: 0 auto;
-  width: 50%; /* Change this to whatever width you want. */
-  padding-top: 5px;
-  border-bottom: 1px solid var(--gold);
 }
 
-
-.col-9 p {
-  width:150px ;
-  text-align: center;
-  padding: 20px;
-  color: var(--gold);
-  font-weight: bold;
+.price-info p {
   font-size: var(--font-x-sm);
+  text-align: center;
 }
 
+.opening-info {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 100px;
+}
 
+.opening-info h1 {
+  padding-right: 30px;
+}
+
+.days {
+  line-height: 2.5;
+  font-size: var(--font-xxs);
+  color: var(--dark-brown)
+}
 
 /*------------------FOOTER------------------*/
 
