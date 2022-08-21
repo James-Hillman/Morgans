@@ -95,6 +95,15 @@ h3 {
 
 /* When the screen is less than 768 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
 @media screen and (max-width: 768px) {
+
+  .topnav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  margin: auto;
+  width: 100%;
+  z-index: 1000;
+  }
   .topnav a  {
     display: none;
   }
@@ -118,7 +127,7 @@ h3 {
     display: block;
     text-align: center;
     font-size: var(--font-x-sm);
-    
+    z-index: 1000;
   }
   .topnav.responsive a.icon {
     font-size: var(--font-lg);
