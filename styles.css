@@ -13,6 +13,7 @@
   --black: black;
   --font-fat-face: "Abril Fatface", cursive;
   --font-Barlow: "Barlow", sans-serif;
+  --font-Rye: 'Rye', cursive;
   --font-Noto: "Noto Serif", serif;
   --font-Lato: "Lato", sans-serif;
   --font-x-sm: 14px;
@@ -102,8 +103,8 @@ h3 {
   top: 50%;
   color: var(--white);
   text-align: center;
-  font-family: var(--font-fat-face);
-  font-size: 76px;
+  font-family: var(--font-Rye);
+  font-size: 96px;
   text-shadow: 1px 1px 2px var(--gold);
   animation: slideDown 2s ease;
   padding-bottom: 5px;
@@ -321,7 +322,6 @@ h3 {
 }
 
 .service-menu {
-  
   background-image: url(./images/beard-trim.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -331,7 +331,7 @@ h3 {
 }
 
 .service-menu h1 {
- position: absolute;
+  position: absolute;
   text-align: center;
   top: 50%;
   left: 0;
@@ -340,7 +340,7 @@ h3 {
   color: var(--white);
 }
 
-@media (max-width:900px){
+@media (max-width: 900px) {
   .service-menu h1 {
     font-size: var(--font-xl);
   }
@@ -500,25 +500,25 @@ h3 {
 }
 
 /*------------------PRICE LIST------------------*/
- .our-prices {
+.our-prices {
   text-align: center;
   color: var(--dark-brown);
   background: var(--white);
   height: fit-content;
   padding: 10px 0px 20px 0px;
   font-size: var(--font-xl);
- }
+}
 
- .price-list ol {
+.price-list ol {
   list-style: none;
- }
+}
 
- .logo {
+.logo {
   background: var(--white);
   width: 100%;
   text-align: center;
   padding-top: 50px;
- }
+}
 
 .price-logo {
   width: 100px;
@@ -526,14 +526,14 @@ h3 {
   background: var(--white);
 }
 
-  .our-prices::after {
+.our-prices::after {
   content: ""; /* This is necessary for the pseudo element to work. */
   display: block;
   margin: 0 auto;
-  width: 30%; /* Change this to whatever width you want. */
+  width: 10%; /* Change this to whatever width you want. */
   padding-top: 20px;
   border-bottom: 1px solid var(--gold);
-  }
+}
 
 .price-list {
   display: flex;
@@ -546,13 +546,13 @@ h3 {
 
 @media (max-width 900px) {
   .price-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  padding: 50px;
-  background: var(--light-brown);
-  justify-content: center;
-}
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+    background: var(--light-brown);
+    justify-content: center;
+  }
 }
 
 .price-list img {
@@ -561,13 +561,27 @@ h3 {
   margin: 0 auto;
 }
 
-
-
 .price-list li {
   font-family: var(--font-Lato);
   font-weight: bold;
   color: var(--med-brown);
   font-size: var(--font-md);
+}
+
+.price-list h3 {
+  
+  color: var(--med-brown);
+  font-size: var(--font-lg);
+  padding-bottom: 50px;
+}
+
+.price-list h3::after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block;
+  margin: 0 auto;
+  width: 50%; /* Change this to whatever width you want. */
+  padding-top: 20px;
+  border-bottom: 1px solid var(--gold2);
 }
 
 
@@ -584,9 +598,7 @@ h3 {
   color: var(--dark-brown);
   font-size: var(--font-lg);
   padding: 30px;
-  
 }
-
 
 .haircuts {
   text-align: center;
@@ -613,7 +625,7 @@ h3 {
   color: var(--white);
 }
 
-@media (max-width:768px){
+@media (max-width: 768px) {
   .peoples-say h1 {
     font-size: var(--font-lg);
   }
@@ -655,7 +667,6 @@ h3 {
 
 .review-1 .checked {
   color: var(--gold);
-  
 }
 
 .review-2 {
@@ -682,7 +693,6 @@ h3 {
 
 .review-2 .checked {
   color: var(--gold);
-  
 }
 
 .review-3 {
@@ -709,16 +719,14 @@ h3 {
 
 .review-3 .checked {
   color: var(--gold);
-  
 }
-
 
 /*------------------LOCATION MAP------------------*/
 .location-map h2 {
   text-align: center;
   font-size: var(--font-lg);
   padding-top: 70px;
-  color: var(--white)
+  color: var(--white);
 }
 
 iframe {
