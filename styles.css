@@ -32,12 +32,17 @@
 }
 html,
 body {
-  background: var(--darkest-brown);
+  background: var(--dark-brown);
   scroll-behavior: smooth;
 }
 p {
   font-family: var(--font-Lato);
   font-size: var(--font-xxs);
+}
+
+h3 {
+  font-size: var(--font-lg);
+  padding: 20px;
 }
 
 /*--------------------------HEADER / NAV / IMAGE TEXT------------------------*/
@@ -495,106 +500,106 @@ p {
 }
 
 /*------------------PRICE LIST------------------*/
+ .our-prices {
+  text-align: center;
+  color: var(--dark-brown);
+  background: var(--white);
+  height: fit-content;
+  padding: 10px 0px 20px 0px;
+  font-size: var(--font-xl);
+ }
+
+ .price-list ol {
+  list-style: none;
+ }
+
+ .logo {
+  background: var(--white);
+  width: 100%;
+  text-align: center;
+  padding-top: 50px;
+ }
+
+.price-logo {
+  width: 100px;
+  height: 100px;
+  background: var(--white);
+}
+
+  .our-prices::after {
+  content: ""; /* This is necessary for the pseudo element to work. */
+  display: block;
+  margin: 0 auto;
+  width: 30%; /* Change this to whatever width you want. */
+  padding-top: 20px;
+  border-bottom: 1px solid var(--gold);
+  }
 
 .price-list {
   display: flex;
   flex-wrap: wrap;
+  gap: 200px;
+  padding: 50px;
+  background: var(--light-brown);
   justify-content: center;
-  padding: 20px;
-  background: var(--white);
 }
 
-.price-list h1 {
+@media (max-width 900px) {
+  .price-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 50px;
+  background: var(--light-brown);
+  justify-content: center;
+}
+}
+
+.price-list img {
+  opacity: 0.7;
+  width: 100px;
+  margin: 0 auto;
+}
+
+
+
+.price-list li {
+  font-family: var(--font-Lato);
+  font-weight: bold;
+  color: var(--med-brown);
+  font-size: var(--font-md);
+}
+
+
+.price-list p {
+  color: var(--white);
+  font-size: var(--font-sm);
+  text-align: center;
+  padding: 30px;
+  font-weight: bold;
+}
+
+.beards {
+  text-align: center;
   color: var(--dark-brown);
   font-size: var(--font-lg);
+  padding: 30px;
+  
 }
 
-.price-list h2 {
-  color: var(--dark-brown);
-  font-size: var(--font-x-sm);
-}
 
-.price-list h1::after {
-  padding-right: 30px;
-  content: ""; /* This is necessary for the pseudo element to work. */
-  display: block; /* This will put the pseudo element on its own line. */
-  margin: 0 auto; /* This will center the border. */
-  width: 80%; /* Change this to whatever width you want. */
-  padding-top: 3px; /* This creates some space between the element and the border. */
-  border-bottom: 1px solid var(--gold); /* This creates the border. Replace black with whatever color you want. */
-}
-
-.price-info {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 60px;
-  padding: 100px;
-  justify-content: center;
-}
-
-.col-7,
-.col-8,
-.col-9,
-h2 {
-  font-size: var(--font-sm);
-  color: var(--dark-brown);
-}
-
-.col-7,
-.col-8,
-.col-9,
-p {
-  font-size: var(--font-x-sm);
-  color: var(--gold2);
+.haircuts {
   text-align: center;
-  padding: 15px;
-}
-
-.price-info p {
-  font-size: var(--font-x-sm);
-  text-align: center;
-}
-
-.opening-info {
-  display: flex;
-  flex-wrap: wrap;
-  padding: 100px;
-  justify-content: center;
-}
-
-@media (max-width: 768px) {
-  .opening-info {
-    padding: 10px;
-    text-align: center;
-  }
-  .opening-info h1 {
-    text-align: center;
-    padding: 0;
-  }
-  .price-list h1 {
-    color: var(--dark-brown);
-    font-size: var(--font-x-sm);
-  }
-}
-
-.opening-info h1 {
-  text-align: center;
-  padding: 10px;
-}
-.opening-info h1::after {
-  content: ""; /* This is necessary for the pseudo element to work. */
-  display: block; /* This will put the pseudo element on its own line. */
-  margin: 0 auto; /* This will center the border. */
-  width: 80%; /* Change this to whatever width you want. */
-  padding-top: 3px; /* This creates some space between the element and the border. */
-  border-bottom: 1px solid var(--gold); /* This creates the border. Replace black with whatever color you want. */
-}
-
-.days {
-  line-height: 2.5;
-  font-size: var(--font-xxs);
   color: var(--dark-brown);
-  margin-left: 30px;
+  font-size: var(--font-lg);
+  padding: 30px;
+}
+
+.wet-shaves {
+  text-align: center;
+  color: var(--dark-brown);
+  font-size: var(--font-lg);
+  padding: 30px;
 }
 
 /*------------------REVIEWS------------------*/
@@ -608,6 +613,11 @@ p {
   color: var(--white);
 }
 
+@media (max-width:768px){
+  .peoples-say h1 {
+    font-size: var(--font-lg);
+  }
+}
 .review-header {
   text-align: center;
   padding: 80px 30px 50px 30px;
