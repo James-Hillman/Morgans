@@ -53,13 +53,20 @@
 
   <body>
     <div class="banner">
-      <div class="nav-bar">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#pricing">Services</a></li>
-        </ul>
-      </div>
+     
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#about">About</a>
+  <a href="#prices">Prices</a>
+  <a href="#contact">Contact</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+
       <div class="content">
         <h1>Morgan's Barbershop</h1>
         <p>Woodsetton, Dudley</p>
@@ -68,7 +75,7 @@
 
     <!--------------------------------ARTICLES----------------------------------->
 
-    <section class="container flex-direction">
+    <section class="container flex-direction" id="about">
       <div
         class="col-4"
         data-aos="zoom-in"
@@ -125,7 +132,7 @@
       <img src="./images/logo.png" alt="" class="price-logo">
       <h2 class="our-prices">Our Prices</h2>
     </div>
-    <div class="price-list">
+    <div class="price-list" id="prices">
       <div class="beards">
         <h3>Beards</h3>
         <ol>
@@ -211,7 +218,7 @@
 
     <!--------------------------FOOTER DETAILS------------------------------>
 
-    <div class="footer">
+    <div class="footer" id="contact">
       <div class="footer-detail">
         <p>Follow Us On</p>
         <div class="socials">
@@ -229,6 +236,20 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+
+    <script>
+
+/* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
     </script>
   </body>
 </html>
