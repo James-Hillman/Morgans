@@ -196,7 +196,7 @@ h3 {
 }
 
 .col-4 .sub-text {
-  font-size: var(--font-x-sm);
+  font-size: var(--font-sm);
   padding: 10px;
   text-align: center;
   color: var(--white);
@@ -226,7 +226,7 @@ h3 {
 }
 
 .col-5 p {
-  font-size: var(--font-x-sm);
+  font-size: var(--font-sm);
   padding: 50px;
   text-align: center;
   line-height: 2;
@@ -257,7 +257,7 @@ h3 {
 }
 
 .col-6 p {
-  font-size: var(--font-x-sm);
+  font-size: var(--font-sm);
   padding: 50px;
   text-align: center;
   color: var(--gold);
@@ -713,10 +713,23 @@ h3 {
 }
 
 
+/*------------------LOCATION MAP------------------*/
+.location-map h2 {
+  text-align: center;
+  font-size: var(--font-lg);
+  padding-top: 70px;
+  color: var(--white)
+}
 
+iframe {
+  padding: 100px 0px 10px 0px;
+}
 
-
-
+@media (max-width: 768px) {
+  iframe {
+    height: 400px;
+  }
+}
 
 /*------------------FOOTER------------------*/
 
