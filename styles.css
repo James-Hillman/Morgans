@@ -316,18 +316,29 @@ p {
 }
 
 .service-menu {
-  display: flex;
-  gap: 50px;
-  justify-content: center;
-  flex-wrap: wrap;
-  background-image: url(./images/rustic.jpg);
+  
+  background-image: url(./images/beard-trim.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 70vh;
-  padding-top: 50px;
-  align-items: center;
   position: relative;
+}
+
+.service-menu h1 {
+ position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 0;
+  right: 0;
+  font-size: 76px;
+  color: var(--white);
+}
+
+@media (max-width:900px){
+  .service-menu h1 {
+    font-size: var(--font-xl);
+  }
 }
 
 .col-1 {
@@ -478,6 +489,7 @@ p {
 .lower-banner {
   background-image: url(./images/shop.jpg);
   background-size: cover;
+  opacity: 0.1;
   background-position: center;
   height: 70vh;
 }
