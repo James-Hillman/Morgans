@@ -577,23 +577,13 @@ h3 {
 
 .price-list {
   display: flex;
-  flex-wrap: wrap;
-  gap: 200px;
-  padding: 50px;
+  Flex-wrap:wrap;
+  gap: 50px;
+  padding: 10px;
   background: var(--light-brown);
   justify-content: center;
 }
 
-@media (max-width 900px) {
-  .price-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 50px;
-    background: var(--light-brown);
-    justify-content: center;
-  }
-}
 
 .price-list img {
   opacity: 0.7;
@@ -605,13 +595,13 @@ h3 {
   font-family: var(--font-Lato);
   font-weight: bold;
   color: var(--med-brown);
-  font-size: var(--font-md);
+  font-size: var(--font-x-sm);
 }
 
 .price-list h3 {
   
   color: var(--med-brown);
-  font-size: var(--font-lg);
+  font-size: var(--font-sm);
   padding-bottom: 50px;
 }
 
@@ -627,7 +617,7 @@ h3 {
 
 .price-list p {
   color: var(--white);
-  font-size: var(--font-sm);
+  font-size: var(--font-xs);
   text-align: center;
   padding: 30px;
   font-weight: bold;
@@ -636,21 +626,21 @@ h3 {
 .beards {
   text-align: center;
   color: var(--dark-brown);
-  font-size: var(--font-lg);
+  font-size: var(--font-sm);
   padding: 30px;
 }
 
 .haircuts {
   text-align: center;
   color: var(--dark-brown);
-  font-size: var(--font-lg);
+  font-size: var(--font-sm);
   padding: 30px;
 }
 
 .wet-shaves {
   text-align: center;
   color: var(--dark-brown);
-  font-size: var(--font-lg);
+  font-size: var(--font-sm);
   padding: 30px;
 }
 
