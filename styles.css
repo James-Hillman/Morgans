@@ -72,7 +72,7 @@ h3 {
   text-align: center;
   padding: 20px 15px;
   text-decoration: none;
-  font-size: var(--font-lg);
+  font-size: var(--font-md);
   font-family: var(--font-Rye);
 }
 
@@ -94,7 +94,7 @@ h3 {
 }
 
 /* When the screen is less than 768 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
 
   .topnav {
   position: fixed;
@@ -115,12 +115,13 @@ h3 {
 }
 
 /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
+    position: fixed;
   }
   .topnav.responsive a {
     float: none;
@@ -141,7 +142,7 @@ h3 {
   color: var(--white);
   text-align: center;
   font-family: var(--font-Rye);
-  font-size: 96px;
+  font-size: 76px;
   text-shadow: 1px 1px 2px var(--gold);
   animation: slideDown 2s ease;
   padding-bottom: 5px;
@@ -376,7 +377,7 @@ h3 {
   top: 50%;
   left: 0;
   right: 0;
-  font-size: 76px;
+  font-size: 56px;
   color: var(--white);
 }
 
@@ -576,12 +577,11 @@ h3 {
 }
 
 .price-list {
-  display: flex;
-  Flex-wrap:wrap;
-  gap: 50px;
-  padding: 10px;
-  background: var(--light-brown);
-  justify-content: center;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+padding: 10px;
+background: var(--light-brown);
+justify-content: center;
 }
 
 
@@ -805,3 +805,8 @@ iframe {
   padding: 10px;
   cursor: pointer;
 }
+
+
+
+
+
